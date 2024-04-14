@@ -1,4 +1,6 @@
 // // Initial API code source: https://github.com/awicks44/JavaScript-SpotifyAPI/blob/master/app.js
+import './node_modules/dotenv/config.js';
+console.log(process.env)
 const APIController = (function(){
     const clientId = process.env.clientId; 
     const clientSecret = process.env.clientSecret; 
@@ -15,6 +17,7 @@ const APIController = (function(){
         const data = await result.json();
         return data.access_token;
     };
+    
 })();
 
 APIController.album_data(); 
