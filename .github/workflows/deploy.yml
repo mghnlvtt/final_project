@@ -1,0 +1,23 @@
+name: deploy key
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SOURCE: './build'
+        BRANCH: 'main'
+        ENVIRONMENT_VARIABLES: |
+          clientId=${{ secrets.clientId }}
+          clientSecret=${{ secrets.clientSecret }}
+        COMMIT_MESSAGE: 'Deploy'
