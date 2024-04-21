@@ -14,13 +14,16 @@ const APIController = (function(){
         const data = await result.json();
         return data.access_token;
     };
+
+
+
     const covers = async () => {
-        const albums = document.querySelectorAll('.album');
+        const albums = document.querySelectorAll('.albumpage');
         for (let i = 0; i < albums.length; i++) {
             const album = albums[i];
-            const albumDetails = album.querySelector('p').textContent;
-            const artist = encodeURIComponent(albumDetails.split("  ")[1].trim());
-            const title = encodeURIComponent(albumDetails.split("  ")[0].trim());
+            const album_details = album.querySelector('p').textContent;
+            const artist = encodeURIComponent(album_details.split("  ")[1].trim());
+            const title = encodeURIComponent(album_details.split("  ")[0].trim());
             const token = await getToken();
             const search = await fetch(`https://api.spotify.com/v1/search?q="${title} ${artist}"&type=album&limit=2`, {
                 method: 'GET',
@@ -40,7 +43,7 @@ const APIController = (function(){
                         }
                     });
                     const data = await data_from_album.json();
-                    if (data.artists.some(artist => artist.name.toLowerCase() === albumDetails.split("  ")[1].trim().toLowerCase())) {
+                    if (data.artists.some(artist => artist.name.toLowerCase() === album_details.split("  ")[1].trim().toLowerCase())) {
                         album_info = data;
                         break; 
                     }

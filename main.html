@@ -6,343 +6,656 @@
     <link rel = 'stylesheet' href="css/reset.css">
     <link rel = 'stylesheet' href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.ico">
     <title>339.9 FM Radio</title>
 </head>
 <body>
     <a href = "#main" class="skip">Skip to Main Content</a>
-    <header>
+    <header id = 'header'>
+        <img id = "headericon" src="images/favicon-16x16.ico" alt="Meghan's Top 49 Icon">     
+        <h1>339.9 FM: All-Time Top 49 Albums</h1>
     </header>
-    <div class='album_container'>
-        <div class='album'>
-            <h1>1</h1>
-            <img id="cover_art">
-            <p>Forced Witness  <br><i>Alex Cameron</i></p>
-            <button class ='open'>view</button>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class = "album_banner"></div>
-                    <div class="track-list"></div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class='album'>
-            <h1>2</h1>
-            <img id="cover_art">
-            <p>Off-Key In Hamburg  <br><i>Father John Misty</i></p>
-            <button  class ='open'>view</button>
-            <div class="modal">
-                <div class="modal-content">
-                    
-                </div>
-            </div>
-        </div>
-        <div class='album'>
-            <h1>3</h1>
-            <img id="cover_art">
-            <p>I Love You, Honeybear  <br><i>Father John Misty</i></p>
-            <button  class ='open'>view</button>
-            <div class="modal">
-                <div class="modal-content">
-                    
-                </div>
-            </div>
-        </div> 
-        <div class='album'>
-            <h1>3</h1>
-            <img id="cover_art">
-            <p>Fear Fun  <br><i>Father John Misty</i></p>
-            <button  class ='open'>view</button>
-            <div class="modal">
-                <div class="modal-content">
-                    
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class='album'>
-            <h1>3</h1>
-            <img id="cover_art">
-            <p>I Love You, Honeybear  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>4</h1>
-            <img id="cover_art">
-            <p>Fear Fun  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>5</h1>
-            <img id="cover_art">
-            <p>AURORA  <br><i>Daisy Jones & The Six</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>6</h1>
-            <img id="cover_art">
-            <p>1989 (Deluxe Edition)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>7</h1>
-            <img id="cover_art">
-            <p>Camp  <br><i>Childish Gambino</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>8</h1>
-            <img id="cover_art">
-            <p>Miami Memory  <br><i>Alex Cameron</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>9</h1>
-            <img id="cover_art">
-            <p>Paul's Boutique (20th Anniversary Remastered Edition)  <br><i>Beastie Boys</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>10</h1>
-            <img id="cover_art">
-            <p>God's Favorite Customer  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>11</h1>
-            <img id="cover_art">
-            <p>folklore  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>12</h1>
-            <img id="cover_art">
-            <p>Midnights (3am Edition)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>13</h1>
-            <img id="cover_art">
-            <p>Lover  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>14</h1>
-            <img id="cover_art">
-            <p>Norman Fucking Rockwell!  <br><i>Lana Del Rey</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>15</h1>
-            <img id="cover_art">
-            <p>Popstar: Never Stop Never Stopping  <br><i>The Lonely Island</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>16</h1>
-            <img id="cover_art">
-            <p>Ultraviolence (Deluxe)  <br><i>Lana Del Rey</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>17</h1>
-            <img id="cover_art">
-            <p>FOUR (Deluxe)  <br><i>One Direction</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>18</h1>
-            <img id="cover_art">
-            <p>The Loneliest Time  <br><i>Carly Rae Jepsen</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>19</h1>
-            <img id="cover_art">
-            <p>evermore  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>20</h1>
-            <img id="cover_art">
-            <p>Fearless (Taylor's Version)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>21</h1>
-            <img id="cover_art">
-            <p>Pure Comedy  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>22</h1>
-            <img id="cover_art">
-            <p>Made in the A.M. (Deluxe Edition)  <br><i>One Direction</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>23</h1>
-            <img id="cover_art">
-            <p>Because the Internet  <br><i>Childish Gambino</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>24</h1>
-            <img id="cover_art">
-            <p>Antics  <br><i>Interpol</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>25</h1>
-            <img id="cover_art">
-            <p>Licensed to Ill  <br><i>Beastie Boys</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>26</h1>
-            <img id="cover_art">
-            <p>Speak Now (Taylor's Version)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>27</h1>
-            <img id="cover_art">
-            <p>Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)  <br><i>Cast of Mamma Mia! The Movie</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>28</h1>
-            <img id="cover_art">
-            <p>Born to Die - The Paradise Edition  <br><i>Lana Del Rey</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>29</h1>
-            <img id="cover_art">
-            <p>Paul's Boutique (20th Anniversary Edition / Remastered)  <br><i>Beastie Boys</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>30</h1>
-            <img id="cover_art">
-            <p>Bronco  <br><i>Orville Peck</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>31</h1>
-            <img id="cover_art">
-            <p>Prelude to Ecstasy  <br><i>The Last Dinner Party</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>32</h1>
-            <img id="cover_art">
-            <p>Turn on the Bright Lights  <br><i>Interpol</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>33</h1>
-            <img id="cover_art">
-            <p>folklore (deluxe version)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>34</h1>
-            <img id="cover_art">
-            <p>Anthem +3  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>35</h1>
-            <img id="cover_art">
-            <p>AM  <br><i>Arctic Monkeys</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>36</h1>
-            <img id="cover_art">
-            <p>The Suburbs (Deluxe)  <br><i>Arcade Fire</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>37</h1>
-            <img id="cover_art">
-            <p>Honeymoon  <br><i>Lana Del Rey</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>38</h1>
-            <img id="cover_art">
-            <p>evermore (deluxe version)  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>39</h1>
-            <img id="cover_art">
-            <p>Booty Shakers Ball  <br><i>Vista Kicks</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>40</h1>
-            <img id="cover_art">
-            <p>reputation  <br><i>Taylor Swift</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>41</h1>
-            <img id="cover_art">
-            <p>Midnight Memories (Deluxe)  <br><i>One Direction</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>42</h1>
-            <img id="cover_art">
-            <p>Twenty Something Nightmare  <br><i>Vista Kicks</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>43</h1>
-            <img id="cover_art">
-            <p>Born in the U.S.A.  <br><i>Bruce Springsteen</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>44</h1>
-            <img id="cover_art">
-            <p>Lust for Life  <br><i>Lana Del Rey</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>45</h1>
-            <img id="cover_art">
-            <p>ANTI (Deluxe)  <br><i>Rihanna</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>46</h1>
-            <img id="cover_art">
-            <p>Mirage (Deluxe Edition)  <br><i>Fleetwood Mac</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>47</h1>
-            <img id="cover_art">
-            <p>Live at Electric Lady  <br><i>Father John Misty</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>48</h1>
-            <img id="cover_art">
-            <p>Traumazine  <br><i>Megan Thee Stallion</i></p>
-            <button>view</button>
-        </div>
-        <div class='album'>
-            <h1>49</h1>
-            <img id="cover_art">
-            <p>Rumours (Super Deluxe)  <br><i>Fleetwood Mac</i></p>
-            <button>view</button>
-        </div> --> -->
+
+    <main>
+    <div class='album_container' id="main">
         
+    <div class='albumpage'>
+        <h1>1</h1>
+        <img id='cover_art' alt='Man wearing a black leather jacket, turtleneck, and sunglasses standing in front of a window. Hands are coming through the blinds from the inside as if taking pictures.'>
+        <p>Forced Witness  <br><i>Alex Cameron</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>2</h1>
+        <img id='cover_art' alt="Black and white photo of a man's silhouette at a piano with light rays behind him. Red text in the upper left corner reads 'Father John Misty Off-key in Hamburg'">
+        <p>Off-Key In Hamburg  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>3</h1>
+        <img id='cover_art' alt='Colorful nativity scene with mythical creatures surrounding a woman and the man-baby in her arms.'>
+        <p>I Love You, Honeybear  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>4</h1>
+        <img id='cover_art' alt='A man with three eyes and long blue hair and beard. Colorful creatures are aound him. Above his head, the letters "F", "J", and "M" are in circles.'>
+        <p>Fear Fun  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>5</h1>
+        <img id='cover_art' alt="A woman with her arms outstretched wearing a white blouse, looking into a man with long hair's eyes. In white text above them, the title 'Aurora' is in all caps. The stylized logo for Daisy Jones & the Six is in the lower right corner.">
+        <p>AURORA  <br><i>Daisy Jones & The Six</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>6</h1>
+        <img id='cover_art' alt="A polaroid photo of a woman's face from the nose down. She is wearing red lipstick and a sweater with seagulls on it. Written on top of the picture in marker is 1989, and the white part of the polaroid says 'TS' and 'DLX'. The 'DLX' is in red.">
+        <p>1989 (Deluxe Edition)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>7</h1>
+        <img id='cover_art' alt="Black bars on the top and bottom of a photo of a forest. The photo has high exposure from sunlight. White text on the top reads 'Childish Gambino' and on the bottom, 'Camp'. Both are in all caps.">
+        <p>Camp  <br><i>Childish Gambino</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>8</h1>
+        <img id='cover_art' alt="Man with buzzed, black hair who is shirtless wearing a heart necklace sitting in front of a photo collage wall. He is looking to the side.">
+        <p>Miami Memory  <br><i>Alex Cameron</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>9</h1>
+        <img id='cover_art' alt="A photo of a corner store with clothing hanging on racks in front. The sign on the building reads 'Lee's Sportswear' and a sign hanging off of the building reads 'Paul's Boutique'.">
+        <p>Paul's Boutique (20th Anniversary Remastered Edition)  <br><i>Beastie Boys</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>10</h1>
+        <img id='cover_art' alt="A bearded man in a white collared shirt, pinching the bridge of his nose with his hand. He is looking into the distance. The photo has red and blue lighting.">
+        <p>God's Favorite Customer  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>11</h1>
+        <img id='cover_art' alt="Black and white photo of woods with a woman far away from the camera looking up into the trees.">
+        <p>folklore  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>12</h1>
+        <img id='cover_art' alt="A photo of a woman with blue eyeshadow and winged eyeliner looking at a match in the lower right corner of a light gray background. Above the photo in a blue gradient reads 'Midnights'. To the left of the image is a track listing in the same color gradient.">
+        <p>Midnights (3am Edition)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>13</h1>
+        <img id='cover_art' alt="Blonde woman with pink and blue ends looks down against a pink, blue, and yellow cloudy background. She has a heart around her right eye in pink glitter. Above her in pink cursive reads 'Lover'.">
+        <p>Lover  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>14</h1>
+        <img id='cover_art' alt="A man and a woman on a boat. The woman is wearing a neon yellow windbreaker and one hand is reaching to the camera and the other is around the man's waist. The man is wearing a black shirt and looking into the distance. In the upper left corner reads 'NFR! in a comic book style action bubble. In the lower right corner in the same font reads vertically 'LDR'.">
+        <p>Norman Fucking Rockwell!  <br><i>Lana Del Rey</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>15</h1>
+        <img id='cover_art' alt="One man with gold jewelry and tattoos looks into the upper distance against a sparkly gold background. On either side, men in sunglasses are looking to the side. Above them in gold lettering reads 'The Lonely Island Popstar Never Stop Never Stopping'. Below them reads 'Official Soundtrack' with a parental advisory warning in the lower right corner.">
+        <p>Popstar: Never Stop Never Stopping  <br><i>The Lonely Island</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>16</h1>
+        <img id='cover_art' alt="In black and white, a woman in a white shirt is holding the window of an open convertible car door. At the bottom of the image in all caps and white text reads 'Ultraviolence'. There is a parental advisory wanring in the upper left corner.">
+        <p>Ultraviolence (Deluxe)  <br><i>Lana Del Rey</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>17</h1>
+        <img id='cover_art' alt="In black and white, there are two photos of the same five men. The images are stacked vertically. In the middle of the image, there is the stylized 'One Direction' logo. Below it, in all caps is 'FOUR' in a white box with an underline. At the bottom, white text reads 'The Ultimate Edition'.">
+        <p>FOUR (Deluxe)  <br><i>One Direction</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>18</h1>
+        <img id='cover_art' alt="A blonde woman sits at an orange table against a brown wall. She is wearing a white sheer blouse and is looking over her shoulder. To her left reads 'Carly Rae Jepsen The Loneliest Time'. On the table are pears and flowers with pearl strings.">
+        <p>The Loneliest Time  <br><i>Carly Rae Jepsen</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>19</h1>
+        <img id='cover_art' alt="A blonde woman in a dark brown and orange coat with a plaid pattern. Her hair is in a french braid. She is facing away from the camera looking into distant woods.">
+        <p>evermore  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>20</h1>
+        <img id='cover_art' alt="In a sepia tone, a blonde woman wearing a white blouse has her arms out and is facing to the left. Her hair is in motion.">
+        <p>Fearless (Taylor's Version)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>21</h1>
+        <img id='cover_art' alt="Stylized drawn people and mountains in black and white against a watercolor dark blue and black sky. There is a small yellow crescent moon in the upper right corner.">
+        <p>Pure Comedy  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>22</h1>
+        <img id='cover_art' alt="Four men sitting together on and in front of a brown leather couch. At the top is the stylized One Direction logo. In the lower right corner in white all caps text reads 'Made in the A.M.'. Below that in red reads 'Deluxe Edition'.">
+        <p>Made in the A.M. (Deluxe Edition)  <br><i>One Direction</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>23</h1>
+        <img id='cover_art' alt="A man wearing a pink and orange Hawaiian shirt looks into the camera. He is sitting against a pink and orange background.">
+        <p>Because the Internet  <br><i>Childish Gambino</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>24</h1>
+        <img id='cover_art' alt="White background. In black all caps text reads 'Interpol'. Directly next to it in red reads 'Antics'.">
+        <p>Antics  <br><i>Interpol</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>25</h1>
+        <img id='cover_art' alt="Artwork of the back quarter of an American Airlines Boeing 727 with the Beastie Boys logo on its tail against a beige background.">
+        <p>Licensed to Ill  <br><i>Beastie Boys</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>26</h1>
+        <img id='cover_art' alt="A blonde woman with curly hair looks over her shoulder against a dark background. She is wearing a dark purple tulle dress.">
+        <p>Speak Now (Taylor's Version)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>27</h1>
+        <img id='cover_art' alt="The young and old versions of the main cast of Mamma Mia! Here We Go Again sitting on a dock in the water. Above them in gold text in all caps reads 'Mamma Mia! Here We Go Again' and in blue 'The Movie Soundtrack Featuring the Songs of ABBA'.">
+        <p>Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)  <br><i>Cast of Mamma Mia! The Movie</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>28</h1>
+        <img id='cover_art' alt="A woman with long hair in a white dress in front of a pool with palm trees behind it. All caps gold text at the top reads 'Lana Del Rey'. At the bottom reads 'Born to Die'. In cursive below it reads 'The Paradise Edition'.">
+        <p>Born to Die - The Paradise Edition  <br><i>Lana Del Rey</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>29</h1>
+        <img id='cover_art' alt="A photo of a corner store with clothing hanging on racks in front. The sign on the building reads 'Lee's Sportswear' and a sign hanging off of the building reads 'Paul's Boutique'.">
+        <p>Paul's Boutique (20th Anniversary Edition / Remastered)  <br><i>Beastie Boys</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>30</h1>
+        <img id='cover_art' alt="A man in a gold outfit stands in front of a large rearing black bronco kicking up dust. The man is wearing a cowboy hat and a mask with gold fringe.">
+        <p>Bronco  <br><i>Orville Peck</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>31</h1>
+        <img id='cover_art' alt="A mantle of a fireplace with candles, books, and flowers. On top of the mantle is a framed photo of five women in dresses.">
+        <p>Prelude to Ecstasy  <br><i>The Last Dinner Party</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>32</h1>
+        <img id='cover_art' alt="In the center of a black background, a movie screen lit up red by lights above it. In the upper left corner, text reads 'Interpol Turn on the Bright Lights'.">
+        <p>Turn on the Bright Lights  <br><i>Interpol</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>33</h1>
+        <img id='cover_art' alt="Black and white photo of woods with a woman far away from the camera looking up into the trees.">
+        <p>folklore (deluxe version)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>34</h1>
+        <img id='cover_art' alt="On a dark gray background, art of a snake wrapped around a dripping green candle with its tail holding a gold bell and looking at a white bird on a branch. There is a starburst to the upper right of them. In the upper left corner all caps text reads 'Anthem +3'. In the lower right corner in lowercase script vertically reads 'FJM'.">
+        <p>Anthem +3  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>35</h1>
+        <img id='cover_art' alt="White sound waves against a black background. Evenly spaced are two peaks in the waves.">
+        <p>AM  <br><i>Arctic Monkeys</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>36</h1>
+        <img id='cover_art' alt="A photo of the back of a car in front of a building with palm trees is tinted red. In white and all caps in the upper left corner is 'Arcade Fire 'The Suburbs''.">
+        <p>The Suburbs (Deluxe)  <br><i>Arcade Fire</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>37</h1>
+        <img id='cover_art' alt="A woman wearing a coral sunhat and white sunglasses looks on sitting in a white truck with red and blue text reading 'StarLine Tours'. Above her in red all caps text reads 'Lana Del Rey'. Below that in a blue old Hollywood style font reads 'Honeymoon'.">
+        <p>Honeymoon  <br><i>Lana Del Rey</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>38</h1>
+        <img id='cover_art' alt="A blonde woman in a dark brown and orange coat with a plaid pattern. Her hair is in a french braid. She is facing away from the camera looking into distant woods.">
+        <p>evermore (deluxe version)  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>39</h1>
+        <img id='cover_art' alt="Four men with long hair look down into a camera. They are surrounded by plants. In the upper right corner reads 'Vista Kicks'. In the lower center in yellow script reads 'Booty Shakers Ball'.">
+        <p>Booty Shakers Ball  <br><i>Vista Kicks</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>40</h1>
+        <img id='cover_art' alt="In black and white, a woman wearing an off the shoulder t-shirt with her hair slicked back. In the upper left corner in old English font reads 'Reputation'. On the right side and overlapping her face is a newspaper style collage reading 'Taylor Swift'.">
+        <p>reputation  <br><i>Taylor Swift</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>41</h1>
+        <img id='cover_art' alt="Five men walking, looking away from the camera with scrapbook style overlays. On a red block in the upper right is the stylized One Direction logo. Below that reads 'The Ultimate Edition'. In the lower left corner, in red all caps text reads 'Midnight Memories'.">
+        <p>Midnight Memories (Deluxe)  <br><i>One Direction</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>42</h1>
+        <img id='cover_art' alt="A collage of old looking photos of four men. Some photos have a red tint. In the center are two photos on top of each other, in them are two men each. In black and white text in the center of that image reads 'Twenty Something Nightmare Vista Kicks'.">
+        <p>Twenty Something Nightmare  <br><i>Vista Kicks</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>43</h1>
+        <img id='cover_art' alt="A man's back and upper thighs against a red and white striped background. He is wearing a white t-shirt and blue jeans with a red hat in his right back pocket. One of his hands is visible. At the top in all caps blue text reads 'Born in the U.S.A Bruce Springsteen'.">
+        <p>Born in the U.S.A.  <br><i>Bruce Springsteen</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>44</h1>
+        <img id='cover_art' alt="A photo of a woman standing in front of an old blue truck with white flowers in her hair and wearing a white dress. There is a rounded off-white border. In dark red all caps text at the top reads 'Lana Del Rey'. At the bottom, the text reads 'Lust for Life'.">
+        <p>Lust for Life  <br><i>Lana Del Rey</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>45</h1>
+        <img id='cover_art' alt="A small child in black and white against a white background with a balloon. A red stain starting in the upper right corner and going to the center of the image. A gold crown is in front of the child's eyes. In the upper right corner, black all caps text on a gold leaf box reads 'Rihanna Anti Deluxe'.">
+        <p>ANTI (Deluxe)  <br><i>Rihanna</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>46</h1>
+        <img id='cover_art' alt="Against a shadowy black background, A man holding a blonde woman with her head tilted back. Over his shoulder, another blonde woman looks on. In the upper right, white all caps text reads 'Fleetwood Mac' and below that, lowercase text reads 'Mirage'. A maroon border is around the image and white all caps text at the top reads 'Deluxe'.">
+        <p>Mirage (Deluxe Edition)  <br><i>Fleetwood Mac</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>47</h1>
+        <img id='cover_art' alt="A black and white photo of a man in a black coat in a recording booth. He has a buzzed haircut and a beard. White all caps text above him reads 'Father John Misty'. Below that in red, text reads 'Live at Electric Lady'.">
+        <p>Live at Electric Lady  <br><i>Father John Misty</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>48</h1>
+        <img id='cover_art' alt="In black and white, three images of a woman with dark lipstick and winged eye makeup are superimposed to overlap with each other. In the leftmost image, she is shouting. In the center image she's looking into the distance. In the third, she's looking down.">
+        <p>Traumazine  <br><i>Megan Thee Stallion</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class='albumpage'>
+        <h1>49</h1>
+        <img id='cover_art' alt="Against an off-white background, in black and white a man in a black vest and white button-up is propping one foot on a small stool. One hand is on his hip and the other is holding the hand of a woman in ballet slippers and a flowing dress. Above them all caps text reads 'Fleetwood Mac Rumours'. A black border is around the whole image and white text at the top reads 'Super Deluxe'.">
+        <p>Rumours (Super Deluxe)  <br><i>Fleetwood Mac</i></p>
+        <button class='open'>view</button>
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='track-list'></div>
+            </div>
+        </div>
+    </div>
+    
 
         <div></div>
         <div></div>
@@ -357,3 +670,5 @@
 
 </body>
 </html>
+
+
