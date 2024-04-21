@@ -447,7 +447,8 @@ audio {
     }
 
     #header img {
-        width: 10%; 
+        width: 10%;
+        height:auto;
     }
     .album_container {
         padding: 0%; 
