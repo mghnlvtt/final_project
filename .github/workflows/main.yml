@@ -1,0 +1,24 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      
+      - name: keys
+        run: |
+          sed -i 's/{{CLIENT_ID}}/${{ secrets.CLIENT_ID }}/g' js/vars.js
+          sed -i 's/{{CLIENT_SECRET}}/${{ secrets.CLIENT_SECRET }}/g' js/vars.js
+          
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-gh-pages@v1
+        with:
+            branch: main
+            folder: ./ 
