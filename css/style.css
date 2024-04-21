@@ -445,10 +445,9 @@ audio {
     #header h1 {
         font-size: 300%;
     }
-
     #header img {
         width: 10%;
-        height:auto;
+        height: auto;
     }
     .album_container {
         padding: 0%; 
