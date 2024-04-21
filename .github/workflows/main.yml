@@ -14,8 +14,8 @@ jobs:
       
       - name: keys
         run: |
-          sed -i 's/{{CLIENT_ID}}/${{ secrets.CLIENT_ID }}/g' js/vars.js
-          sed -i 's/{{CLIENT_SECRET}}/${{ secrets.CLIENT_SECRET }}/g' js/vars.js
+          sed -i 's/{{CLIENT_ID}}/${{ secrets.CLIENT_ID }}/g' main.html
+          sed -i 's/{{CLIENT_SECRET}}/${{ secrets.CLIENT_SECRET }}/g' main.html
           
       - uses: peaceiris/actions-gh-pages@v4  
         with:
