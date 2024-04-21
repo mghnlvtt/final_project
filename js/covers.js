@@ -1,5 +1,5 @@
 // // Initial API code source: https://github.com/awicks44/JavaScript-SpotifyAPI/blob/master/app.js
-import { clientId, clientSecret } from "/js/vars.js";
+import { clientId, clientSecret } from "./vars.js";
 document.addEventListener('DOMContentLoaded', function() {
 const APIController = (function(){
     const id = clientId; 

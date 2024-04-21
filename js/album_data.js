@@ -1,4 +1,4 @@
-import { clientId, clientSecret } from "/js/vars.js";
+import { clientId, clientSecret } from "./vars.js";
 document.addEventListener('DOMContentLoaded', function() {
     const API = (() => {
         const id = clientId;
