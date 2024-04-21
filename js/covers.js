@@ -1,9 +1,8 @@
 // // Initial API code source: https://github.com/awicks44/JavaScript-SpotifyAPI/blob/master/app.js
-import { clientId, clientSecret } from "./vars.js";
 document.addEventListener('DOMContentLoaded', function() {
 const APIController = (function(){
-    const id = clientId; 
-    const secret = clientSecret; 
+    const id = '/*INSERT_CLIENT_ID_HERE*/'; 
+    const secret = '/*INSERT_CLIENT_SECRET_HERE*/'; 
     const getToken = async () => {
         const result = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
