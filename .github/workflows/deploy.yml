@@ -14,10 +14,10 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SOURCE: './build'
-        BRANCH: 'main'
-        ENVIRONMENT_VARIABLES: |
+        token: ${{ secrets.GITHUB_TOKEN }}
+        folder: './build'
+        branch: 'main'
+        commit-message: 'Deploy'
+        environment-variables: |
           clientId=${{ secrets.clientId }}
           clientSecret=${{ secrets.clientSecret }}
-        COMMIT_MESSAGE: 'Deploy'
