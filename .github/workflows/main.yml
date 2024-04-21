@@ -1,0 +1,24 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+      
+      - name: keys
+        run: |
+          sed -i 's/{{CLIENT_ID}}/${{ secrets.CLIENT_ID }}/g' main.html
+          sed -i 's/{{CLIENT_SECRET}}/${{ secrets.CLIENT_SECRET }}/g' main.html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          publish_branch: main 
+          publish_dir: ./
