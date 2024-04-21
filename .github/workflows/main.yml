@@ -17,8 +17,7 @@ jobs:
           sed -i 's/{{CLIENT_ID}}/${{ secrets.CLIENT_ID }}/g' js/vars.js
           sed -i 's/{{CLIENT_SECRET}}/${{ secrets.CLIENT_SECRET }}/g' js/vars.js
           
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-gh-pages@v1
+      - uses: peaceiris/actions-gh-pages@v4  
         with:
-            branch: main
-            folder: ./ 
+          branch: main 
+          folder: ./  
