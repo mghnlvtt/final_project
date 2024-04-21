@@ -1,7 +1,8 @@
+import { clientId, clientSecret } from "/js/vars.js";
 document.addEventListener('DOMContentLoaded', function() {
     const API = (() => {
-        const id = process.env.clientId;
-        const secret = process.env.clientSecret;
+        const id = clientId;
+        const secret = clientSecret;
 
         const getToken = async () => {
             const result = await fetch('https://accounts.spotify.com/api/token', {

@@ -1,13 +1,15 @@
 // // Initial API code source: https://github.com/awicks44/JavaScript-SpotifyAPI/blob/master/app.js
+import { clientId, clientSecret } from "/js/vars.js";
+document.addEventListener('DOMContentLoaded', function() {
 const APIController = (function(){
-    const id = process.env.clientId; 
-    const secret = process.env.clientSecret; 
+    const id = clientId; 
+    const secret = clientSecret; 
     const getToken = async () => {
         const result = await fetch('https://accounts.spotify.com/api/token', {
             method: 'POST',
             headers:{
                 'Content-Type' : 'application/x-www-form-urlencoded',
-                'Authorization' : 'Basic ' + btoa(clientId + ':' + clientSecret)
+                'Authorization' : 'Basic ' + btoa(id + ':' + secret)
             },
             body: 'grant_type=client_credentials'
         });
@@ -58,9 +60,10 @@ const APIController = (function(){
         }
     };
 }   
-       return {
-        covers: covers
-    };
+return {
+    covers: covers
+};
 })();
 
-APIController.covers(); 
+APIController.covers();
+});
