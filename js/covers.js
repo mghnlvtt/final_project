@@ -4,17 +4,30 @@ const APIController = (function(){
     const id = '/*INSERT_CLIENT_ID_HERE*/'; 
     const secret = '/*INSERT_CLIENT_SECRET_HERE*/'; 
     const getToken = async () => {
-        const result = await fetch('https://accounts.spotify.com/api/token', {
-            method: 'POST',
-            headers:{
-                'Content-Type' : 'application/x-www-form-urlencoded',
-                'Authorization' : 'Basic ' + btoa(id + ':' + secret)
-            },
-            body: 'grant_type=client_credentials'
-        });
+            try {
+            const tok = btoa(id + ':' + secret);
+            console.log('Test:', credentials);
+            const result = await fetch('https://accounts.spotify.com/api/token', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Authorization': 'Basic ' + tok,
+                },
+                body: 'grant_type=client_credentials',
+            });
+            console.log('status:', result.status);
+            console.log('headers:', result.headers);
+            
+        // const result = await fetch('https://accounts.spotify.com/api/token', {
+        //     method: 'POST',
+        //     headers:{
+        //         'Content-Type' : 'application/x-www-form-urlencoded',
+        //         'Authorization' : 'Basic ' + btoa(id + ':' + secret)
+        //     },
+        //     body: 'grant_type=client_credentials'
+        // });
         const data = await result.json();
         return data.access_token;
-        console.log(data.access_token)
 
     };
 
