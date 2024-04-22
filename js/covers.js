@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         return {
-            encodeCredentials
+            testing
         };
     })();
 
