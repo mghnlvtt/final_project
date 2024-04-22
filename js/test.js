@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const secret = '/*INSERT_CLIENT_SECRET_HERE*/';
         const testing = () => {
             const token = btoa(id + ':' + secret);
+            console.log('id:', id);
+            console.log('secret:', secret);
             console.log('test:', token);
         };
 
