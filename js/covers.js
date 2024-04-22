@@ -13,6 +13,7 @@ const APIController = (function(){
             body: 'grant_type=client_credentials'
         });
         const data = await result.json();
+        console.log(data)
         return data.access_token;
     };
 
