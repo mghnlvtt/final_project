@@ -16,7 +16,7 @@ jobs:
 
       - name: keys
         run: |
-          js_file1="js/covers.js"
+          js_file1="js/test.js"
           js_file2="js/album_data.js"
           clientId="${{ secrets.CLIENTID }}"
           clientSecret="${{ secrets.CLIENTSECRET }}"
