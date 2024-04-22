@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const API = (() => {
-        const id = '4dd98c178ff74d3a82dc42f537ad5736';
-        const secret = 'fac25ea5a34d4e5fab4be12cc29f6238';
+        const id = '/*INSERTID*/';
+        const secret = '/*INSERTSECRET*/';
 
         const getToken = async () => {
             const result = await fetch('https://accounts.spotify.com/api/token', {
