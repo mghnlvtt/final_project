@@ -36,6 +36,6 @@ jobs:
 
       - name: Output GitHub Pages URL
         run: |
-          site_url="https://mghnlvtt.github.io/main.html"
+          site_url="https://mghnlvtt.github.io/final_project/main.html"
 
           echo "site published, url: ${site_url}"
