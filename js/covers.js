@@ -4,7 +4,6 @@ const APIController = (function(){
     const id = '/*INSERT_CLIENT_ID_HERE*/'; 
     const secret = '/*INSERT_CLIENT_SECRET_HERE*/'; 
     const getToken = async () => {
-            try {
             const tok = btoa(id + ':' + secret);
             console.log('Test:', credentials);
             // const result = await fetch('https://accounts.spotify.com/api/token', {
