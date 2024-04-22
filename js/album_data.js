@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const token = await getToken();
                 const search = await fetch(`https://api.spotify.com/v1/search?q="${title} ${artist}"&type=album&limit=2`, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    }
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                }
                 });
                 const results = await search.json();
 
