@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <p class="duration">${format_duration(track.duration_ms)}</p>
                                     <div class="audio-player">
                                         ${track.preview_url ? `
-                                            <button class="play_button">
+                                            <button class="playbutton">
                                                 <img src="images/play.png" alt="Play button" class="play_img">
                                             </button>
                                             <audio class="audio_player" src="${track.preview_url}" type="audio/mpeg">
