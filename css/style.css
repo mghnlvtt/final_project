@@ -395,6 +395,7 @@ audio {
         font-size: x-large;
         max-width: 100%;
         margin: 0%;
+        text-align: left;
     }
 
     .track .track_num {
