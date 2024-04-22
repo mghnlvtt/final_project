@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     })();
 
-    APIController.encodeCredentials();
+    APIController.testing();
 });
