@@ -1,11 +1,11 @@
 // // Initial API code source: https://github.com/awicks44/JavaScript-SpotifyAPI/blob/master/app.js
-document.addEventListener('DOMContentLoaded', function() {
-const APIController = (function(){
-    const id = '/*INSERT_CLIENT_ID_HERE*/'; 
-    const secret = '/*INSERT_CLIENT_SECRET_HERE*/'; 
-    const getToken = async () => {
-            const tok = btoa(id + ':' + secret);
-            console.log('Test:', credentials);
+// document.addEventListener('DOMContentLoaded', function() {
+// const APIController = (function(){
+//     const id = '/*INSERT_CLIENT_ID_HERE*/'; 
+//     const secret = '/*INSERT_CLIENT_SECRET_HERE*/'; 
+//     const getToken = async () => {
+//             const tok = btoa(id + ':' + secret);
+//             console.log('Test:', credentials);
             // const result = await fetch('https://accounts.spotify.com/api/token', {
             //     method: 'POST',
             //     headers: {
@@ -77,9 +77,27 @@ const APIController = (function(){
 //     covers: covers
 // };
 })();
-    }
-}
-}
+//     }
+// }
+// }
 
-APIController.covers();
+// APIController.covers();
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const APIController = (function() {
+        const id = '/*INSERT_CLIENT_ID_HERE*/';
+        const secret = '/*INSERT_CLIENT_SECRET_HERE*/';
+            const getToken = async () => {
+            const tok = btoa(id + ':' + secret);
+            console.log('Test:', tok);
+            
+        };
+        return {
+            getToken
+        };
+    })();
+    APIController.getToken();
 });
