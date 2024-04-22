@@ -33,3 +33,9 @@ jobs:
           branch: gh-pages  
           folder: '.'  
           token: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Output GitHub Pages URL
+        run: |
+          site_url="https://mghnlvtt.github.io/main.html"
+
+          echo "site published, url: ${site_url}"
