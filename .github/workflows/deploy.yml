@@ -1,0 +1,35 @@
+name: deploy 
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest 
+
+    steps:
+      - name: repo
+        uses: actions/checkout@v4
+
+      - name: add keys
+        run: |
+          js_file1="js/covers.js"
+          js_file2="js/album_data.js"
+          clientId="${{ secrets.CLIENTID }}"
+          clientSecret="${{ secrets.CLIENTSECRET }}"
+          
+          sed -i "s|/\\*INSERT_CLIENT_ID_HERE\\*/|$clientId|g" "$js_file1"
+          sed -i "s|/\\*INSERT_CLIENT_ID_HERE\\*/|$clientId|g" "$js_file2"
+          sed -i "s|/\\*INSERT_CLIENT_SECRET_HERE\\*/|$clientSecret|g" "$js_file1"
+          sed -i "s|/\\*INSERT_CLIENT_SECRET_HERE\\*/|$clientSecret|g" "$js_file2"
+          
+          echo "keys added: $js_file1 and $js_file2"
+
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  
+          folder: '.'  
+          token: ${{ secrets.GITHUB_TOKEN }} 
