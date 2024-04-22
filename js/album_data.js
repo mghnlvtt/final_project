@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-
+                console.log(album_info)
                 if (album_info) {
                     view_button.addEventListener('click', function() {
                         console.log('View button clicked');
@@ -151,10 +151,10 @@ document.addEventListener('DOMContentLoaded', function() {
                             tracklist.appendChild(track_data);
                             
                             if (track.preview_url) {
-                                const play_button = track_data.querySelector('.play_button');
-                                play_button.addEventListener('click', function() {
+                                const playbutton = track_data.querySelector('.playbutton');
+                                playbutton.addEventListener('click', function() {
                                     const audio_player = track_data.querySelector('.audio_player');
-                                    const play_img = play_button.querySelector('img');
+                                    const play_img = playbutton.querySelector('img');
                                     const paused_true = audio_player.paused;
                                     const playbutton_img = paused_true ? 'images/pause.png' : 'images/play.png';
 
