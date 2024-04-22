@@ -151,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             tracklist.appendChild(track_data);
                             
                             if (track.preview_url) {
+                                console.log(track.preview_url)
                                 const playbutton = track_data.querySelector('.playbutton');
                                 playbutton.addEventListener('click', function() {
                                     const audio_player = track_data.querySelector('.audio_player');
